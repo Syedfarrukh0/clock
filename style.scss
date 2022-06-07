@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    // border: 2px solid red;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .clock_img{
+        // border: 2px solid green;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 50vw;
+            height: 45vw;
+        }
+
+        .c-name{
+            position: absolute;
+            // right: 1.8vw;
+            // top: -1vw;
+            bottom: 0vw;
+            left: 38.5vw;
+
+            h1{
+                color: white;
+                font-size: 3vw;
+            }
+        }
+    }
+
+    .hand_origin{
+        border: 2px solid black;
+        width: 0%;
+        height: 0%;
+        position: relative;
+        top: -21.5vw;
+        left: -3.5vw;
+        z-index: 10;
+
+        #hour_hand{
+            border: 2px solid white;
+            width: 0%;
+            height: 9.5vw;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            transform-origin: bottom;
+            z-index: -1;
+        }
+    
+        #min_hand{
+            border: 2px solid white;
+            @extend #hour_hand;
+            width: auto;
+            height: 12vw;
+            transform-origin: bottom;
+        }
+    
+        #sec_hand{
+            border: 2px solid silver;
+            @extend #hour_hand;
+            height: 14vw;
+            transform-origin: bottom;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+main {
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  main .clock_img {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    main .clock_img img {
+      width: 50vw;
+      height: 45vw; }
+    main .clock_img .c-name {
+      position: absolute;
+      bottom: 0vw;
+      left: 38.5vw; }
+      main .clock_img .c-name h1 {
+        color: white;
+        font-size: 3vw; }
+  main .hand_origin {
+    border: 2px solid black;
+    width: 0%;
+    height: 0%;
+    position: relative;
+    top: -21.5vw;
+    left: -3.5vw;
+    z-index: 10; }
+    main .hand_origin #hour_hand, main .hand_origin #min_hand, main .hand_origin #sec_hand {
+      border: 2px solid white;
+      width: 0%;
+      height: 9.5vw;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      z-index: -1; }
+    main .hand_origin #min_hand {
+      border: 2px solid white;
+      width: auto;
+      height: 12vw;
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom; }
+    main .hand_origin #sec_hand {
+      border: 2px solid silver;
+      height: 14vw;
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom; }
+
+/*# sourceMappingURL=style.css.map */
